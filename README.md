@@ -31,4 +31,4 @@ private static final String TAG1 = "Ad01";
 
 ## API
 
-[AMoAd Native API](https://rawgit.com/amoad/amoad-native-android-sdk/master/docs/javadoc/index.html)
+[AMoAd Native API](https://cdn.rawgit.com/amoad/amoad-native-android-sdk/master/docs/javadoc/index.html)
