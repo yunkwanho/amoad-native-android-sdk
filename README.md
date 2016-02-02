@@ -17,7 +17,7 @@ Android 2.3 or later
 
 ## Installing
 
-[ZIPをダウンロード](https://github.com/amoad/amoad-native-android-sdk/archive/master.zip) *mavenに対応予定*
+[ZIPをダウンロード](https://github.com/amoad/amoad-native-android-sdk/archive/master.zip)
 
 ## Usage
 
