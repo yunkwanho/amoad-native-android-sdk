@@ -32,3 +32,12 @@ private static final String TAG1 = "Ad01";
 ## API
 
 [AMoAd Native API](https://cdn.rawgit.com/amoad/amoad-native-android-sdk/master/docs/javadoc/index.html)
+
+## Project Settings
+
+1. AndroidStudioで「../AMoAdNativeDemo/」をFile>Openする。
+
+2. AndroidプロジェックトでGooglePlayerServiceを設定する。
+   ([GooglePlayerService設定方法](https://developers.google.com/android/guides/setup#add_google_play_services_to_your_project))
+
+<img width="640" src="docs/res/AndroidStudio.png">
