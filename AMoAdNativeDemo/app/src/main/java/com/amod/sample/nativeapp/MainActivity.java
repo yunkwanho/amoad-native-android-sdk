@@ -1,10 +1,13 @@
 package com.amod.sample.nativeapp;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 
 import org.json.JSONObject;
 
@@ -46,8 +49,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
             }
         });
 
+        int widthDpi = 140;
+        int heightDpi = 120;
+        int widthPixel = dpiToPixel(widthDpi);
+        int heightPixel = dpiToPixel(heightDpi);
+        
         // TODO 2.広告ビューを画面に追加する
-        container.addView(com.amoad.Native.getView(SID1, TAG1), new ViewGroup.LayoutParams(400/* px */, 400 /* px */));
+        container.addView(com.amoad.Native.getView(SID1, TAG1), new ViewGroup.LayoutParams(widthPixel, heightPixel));
     }
 
     @Override
@@ -96,5 +104,16 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 reload();
                 break;
         }
+    }
+
+    private int dpiToPixel(int dpiValue) {
+        return (int) (dpiValue * getDensity() + 0.5F);
+    }
+
+    private final float getDensity() {
+        final WindowManager wm = (WindowManager)getSystemService(Context.WINDOW_SERVICE);
+        final DisplayMetrics metrics = new DisplayMetrics();
+        wm.getDefaultDisplay().getMetrics(metrics);
+        return metrics.density;
     }
 }
