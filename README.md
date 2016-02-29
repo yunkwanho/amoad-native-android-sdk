@@ -4,8 +4,8 @@
 
 # AMoAd Native Demo for Android
 
-<img width="160" height="284" src="docs/res/ScreenShot01.png">
-<img width="320" src="docs/res/ScreenShot03.png">
+<img height="300" src="docs/res/ScreenShot01.png">
+<img height="300" src="docs/res/ScreenShot03.png">
 
 ## Introduction
 
