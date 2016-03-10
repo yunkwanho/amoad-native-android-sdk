@@ -30,6 +30,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         ViewGroup container = (ViewGroup) findViewById(R.id.container);
 
+        //ネットワーク通信の制限時間を設定する
+        com.amoad.Native.setNetworkTimeoutMillis(5000);//５秒
+
         // TODO 1.ロ広告をロードする
         com.amoad.Native.load(this, SID1, TAG1, new com.amoad.ResultListener() {
             @Override
